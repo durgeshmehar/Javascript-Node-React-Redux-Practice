@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+    
+    </div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+        const app =document.getElementById("app");
+        function Header({title}){
+            return (<>
+            <h1>Successfully add Heading</h1>
+            <h1>Title : {title}</h1>
+            </>)
+        }
+        function Homepage(){
+            const names=['Durgesh' ,'Rakesh','Vaibhav','Sachin'];
+            const [likes,setLikes] =React.useState(0);
+            function handleClick(){
+                setLikes(likes+1);
+            }
+
+            return (<>
+            <div>    
+            <Header title="Durgesh"/>
+            <Header title="Sagar"/>
+             <ul>
+                { names.map((name)=>(
+                    <li key={name}> {name} </li>
+                ))}
+             </ul>
+
+            </div>
+            <div>
+                <h1>Do it what ever you want </h1>
+            </div>
+            <button onClick={handleClick}> Like ({likes})</button>
+             
+           </> )
+            
+        }
+        ReactDOM.render(<Homepage />,app);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+    .button-body{
+      font-size: 1vw;
+      color:black;
+      padding:1vw;
+    }
+    .UL{
+      font-size:1.6vw;
+      list-style-position:inside;
+      font-weight:900;
+      color:blue;
+      padding:1vw;
+    }
+    .LI{
+      font-weight:200;
+      color:black;
+      padding:0.3vw 0 0 2vw;
+    }
+    .LIdark {
+      color:rgb(189, 203, 227)
+
+    }
+    
+    .ULdark{
+     color:rgb(181, 168, 83)
+    }
+    
+    .indivisualbtn button{
+      margin:0 0 0 0.5vw;
+      background-color: rgb(232, 227, 227);
+      padding:2px;
+      font-size:0.8vw;
+
+    }
+    @media print{
+      .indivisualbtn{
+        display: none;
+      }
+    }

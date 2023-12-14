@@ -1,0 +1,64 @@
+
+
+ phase 1) "Redux,middleware ,redux-logger,redux-thunk ,json-server,multiple reducer,3 types of api handling Concepts done"
+
+    	To make a db server
+	> json-server db.json     or > json-server -p 3000 db.json     
+
+phase 2) React-redux async request handleing by api 
+         ( useSelector , useDispatch ) 
+
+phase 3) Redux toolkit(slice) => immer library for state manage , Redux Toolkit:configureStore, createSlice, createAction ,createAsyncThunk,createReducer"
+        ( useSelector , useDispatch ) 
+        Redux toolKit = createSlice( { name ,InitialState ,reducers:{  increment:(state) => { state.amount += 1}},extrareducer:{(builder)=>{
+  builder.addCase( getUserAccount.fulfilled, (state,action)=>{
+		state.amount = action.payload;
+		state.pending=false;
+	})
+
+} })
+  
+  export const { increment, decrement, incrementByAmount } = accountSlice.actions
+
+  export default accountSlice.reducer
+
+Phase 4) RTK-Query =(createSlice+createAsyncThunk) (API fetching ,Catching Library build on top of redux) => Give a cache if user req same thing from api so do not go for network, do Polling(run website when internet comes)
+
+         => Not use of ( useSelector , useDispatch ) 
+         => const {data, isLoading ,isSuccess} = useGetAccountsQuery();
+	    const [addAccount] = useAddAccountMutation();
+
+
+	RTK Query = createApi({ reducerPath:'--' , baseQuery:fetchBaseQuery({baseUrl:"http://.."}),
+			endpoints :(builder)=>({
+				getAccount:builder.query({
+				    query: ,transformResponse ,providesTag,invalidesTag,
+				})
+
+			})
+
+Phase 5) Redux Project on Redux toolkit(makes slice) + Thunk Middleware
+
+  5.1)  Cart.js    => <button onClick={()={dispatch(deleteAsync(item.id)) }}> Remove </button>
+ 5.2) cartSlice.js =>  export const deleteAsync =createAsyncThunk( 
+		'product/deleteItem' ,
+		async (itemId) => {
+			await deleteItem(itemId);
+    		return itemId;
+  	       }
+	     );
+           
+          export const cartSlice = createSlice({
+          name: 'product',
+  	initialState,
+ 	 reducers: {},
+  extraReducers: (builder) => { builder.addCase(deleteAsync.fulfilled,(state,action)=>{
+       }  
+
+5.3)  cartApi.js => export function deleteItem(id) {
+	return axios.delete(`http://localhost:8080/cart/${id}`);
+}
+        
+         
+
+ 

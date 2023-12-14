@@ -1,0 +1,54 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "amount": 200
+    },
+    {
+      "id": 2,
+      "amount": 777
+    },
+    {
+      "amount": 777,
+      "id": 22
+    },
+    {
+      "amount": 150,
+      "id": 23
+    },
+    {
+      "amount": 150,
+      "id": 24
+    },
+    {
+      "amount": 150,
+      "id": 25
+    },
+    {
+      "amount": 150,
+      "id": 26
+    },
+    {
+      "amount": 150,
+      "id": 27
+    },
+    {
+      "amount": 150,
+      "id": 28
+    },
+    {
+      "amount": 150,
+      "id": 29
+    }
+  ],
+  "bonus": [
+    {
+      "id": 1,
+      "points": 2
+    },
+    {
+      "id": 2,
+      "points": 3
+    }
+  ]
+}

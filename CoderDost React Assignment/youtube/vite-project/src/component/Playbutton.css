@@ -1,0 +1,26 @@
+ button{
+    padding:1vw 2vw;
+    margin:2vw;
+    border:none;
+    border-radius: 5px;
+}
+
+button.dark{
+    color:rgb(244, 247, 244);
+    background-color: rgb(32, 84, 116);
+}
+
+button.dark:hover{
+    background-color:  rgb(103, 120, 131);
+    border-radius: 2vw;
+}
+button.light{
+    color:rgb(244, 247, 244);
+    background-color: rgb(59, 75, 85);
+}
+
+button.light:hover{
+    background-color: rgb(94, 116, 130);
+    border-radius: 2vw;
+   
+}

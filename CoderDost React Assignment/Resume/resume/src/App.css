@@ -1,0 +1,38 @@
+.app-body{
+  margin-top:'2vw';
+  position: relative;
+
+}
+button{
+  margin-top:2vw 1vw;
+  font-size: 1.3vw;
+  padding:0.5vw 0.8vw;
+  background-color: rgb(254, 254, 254);
+  text-align: center;
+  border-radius:5px ;
+}
+button:hover{
+  background-color: grey;
+  color:rgb(242, 241, 239);
+  cursor: pointer;
+}
+
+.selectionList {
+  margin-top:2vw;
+}
+.printbutton{
+  margin:1vw;
+  margin-top:3vw;
+  width:40vw;
+  
+  text-align: center;
+}
+.printbutton button{
+  border:none;
+  color:white;
+  background-color: #164b7d;
+}
+.printbutton button:hover{
+  background-color: #1e76c8;
+ font-weight: 80;
+}

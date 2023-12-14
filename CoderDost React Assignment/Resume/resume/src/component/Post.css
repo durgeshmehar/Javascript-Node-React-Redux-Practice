@@ -1,0 +1,44 @@
+
+ul.post{
+    list-style-type:none;
+}
+.postLI{
+    background-color: #ADD8E6;
+    list-style-position: outside;
+    padding:10px 0px;
+}
+.itemInfo{
+    position: relative;
+    display: flex;
+}
+
+.itemInfo h3,.itemInfo p{
+    font-size: 1.8vw;
+    padding:0.2vw
+}
+.itemInfo button{
+    background-color: #337AB7;
+    color:white;
+    padding:0.4vw;
+    position: absolute;
+    right:0vw;
+}
+.singleComment{
+    margin:0.5vw;
+    padding:0.3vw;
+}
+.comments{
+    padding: 1.3vw;
+    font-size: 1.4vw;
+    background-color: #c6e0e0;
+    box-sizing: border-box;
+}
+.commentID{
+    color:black;
+    font-weight: bold;
+}
+.commentName{
+    color:black;
+    font-weight: bold;
+    margin-right:0.3vw;
+}

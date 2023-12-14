@@ -1,0 +1,11 @@
+EJS (Embedded JavaScript) is a templating language that allows you to generate HTML markup with plain JavaScript. It is often used in web development with Node.js and Express.js to create dynamic web pages and web applications.
+
+EJS templates are essentially HTML files with embedded JavaScript code that can be executed on the server-side to generate dynamic content. EJS provides a simple syntax for embedding JavaScript code in HTML, allowing you to generate dynamic content based on data from a database, user input, or other sources.
+
+EJS templates can be used to generate HTML markup, include partial templates, and conditionally render content based on data or user input. They are an essential part of modern web development and are used extensively in building web applications and services.
+
+EJS (Embedded JavaScript) is a templating language that allows you to generate HTML markup with plain JavaScript. It is often used in web development with Node.js and Express.js to create dynamic web pages and web applications.
+
+EJS templates are essentially HTML files with embedded JavaScript code that can be executed on the server-side to generate dynamic content. EJS provides a simple syntax for embedding JavaScript code in HTML, allowing you to generate dynamic content based on data from a database, user input, or other sources.
+
+EJS templates can be used to generate HTML markup, include partial templates, and conditionally render content based on data or user input. They are an essential part of modern web development and are used extensively in building web applications and services.

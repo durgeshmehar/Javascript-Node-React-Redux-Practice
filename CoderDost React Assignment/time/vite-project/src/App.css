@@ -1,0 +1,18 @@
+.app-body{
+  margin-top:'2vw',
+}
+button{
+  margin:2vw;
+  font-size: 1.3vw;
+  padding:0.5vw 1.5vw;
+  background-color: #dd7973 ;
+  text-align: center;
+  border-radius:10px ;
+  border:none;
+  color:rgb(12, 12, 26);
+}
+button:hover{
+  background-color: grey;
+  color:rgb(242, 241, 239);
+  cursor: pointer;
+}

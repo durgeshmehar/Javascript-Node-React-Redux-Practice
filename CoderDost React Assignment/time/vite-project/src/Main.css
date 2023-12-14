@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+    .container{
+     color :red;
+     height:50px;
+     width:100vw;
+     background-color:pink;
+     position:fixed;
+     z-index:10;
+    }
+    .left{
+      height:100vh;
+      background-color :#e0eeee;
+      width:50px;
+      float:left;
+      position:fixed;
+    }
+    .right{
+     height:150vh;
+     background-color :#e0eeee;
+     width:50px;
+     position:inherit;
+     float: right;
+    }
+    .data{
+     display: inline-block;
+     width:80vw;
+     margin-top: 80px;
+     margin-left: 80px;
+     color:purple;
+     font-size:2vw;
+    }
+
+    @media screen and ( max-width :600px){
+      .left,.right{
+        width:5vw;
+      }
+      .container{
+        height:5vw;
+      }
+      .data{
+        margin-left:8vw;
+       }
+       .right{
+        position: absolute;
+       top: 0;
+       right: 0;
+       }
+       .data{
+        margin-top: 8vw;
+       }
+    }
+
+
+
+ 
